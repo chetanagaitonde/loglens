@@ -170,4 +170,3 @@ else:
         <p>LogLens will autonomously investigate your cloud activity and generate a full threat report.</p>
     </div>
     """, unsafe_allow_html=True)
-    
