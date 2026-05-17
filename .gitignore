@@ -1,0 +1,30 @@
+# Virtual environment - never commit this
+venv/
+.venv/
+env/
+
+# API keys and secrets - NEVER commit these
+.env
+*.env
+secrets.py
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Streamlit cache
+.streamlit/
+
+# macOS junk
+.DS_Store
+.AppleDouble
+
+# Temporary uploaded files
+uploads/
+*.tmp
+
+# VS Code settings (optional - can remove if you want to share)
+.vscode/

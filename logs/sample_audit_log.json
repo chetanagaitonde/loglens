@@ -1,0 +1,183 @@
+[
+  {
+    "insertId": "abc123xyz",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "admin@company.com"
+      },
+      "requestMetadata": {
+        "callerIp": "203.0.113.45",
+        "callerSuppliedUserAgent": "Mozilla/5.0"
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.objects.get",
+      "resourceName": "projects/_/buckets/sensitive-data-bucket/objects/employee_records.csv",
+      "status": {}
+    },
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": { "bucket_name": "sensitive-data-bucket", "project_id": "my-project" }
+    },
+    "severity": "INFO",
+    "timestamp": "2026-05-17T02:14:33Z"
+  },
+  {
+    "insertId": "def456uvw",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "admin@company.com"
+      },
+      "requestMetadata": {
+        "callerIp": "203.0.113.45",
+        "callerSuppliedUserAgent": "Mozilla/5.0"
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.objects.get",
+      "resourceName": "projects/_/buckets/sensitive-data-bucket/objects/financial_reports_Q1.xlsx",
+      "status": {}
+    },
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": { "bucket_name": "sensitive-data-bucket", "project_id": "my-project" }
+    },
+    "severity": "INFO",
+    "timestamp": "2026-05-17T02:15:01Z"
+  },
+  {
+    "insertId": "ghi789rst",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "admin@company.com"
+      },
+      "requestMetadata": {
+        "callerIp": "203.0.113.45",
+        "callerSuppliedUserAgent": "python-requests/2.28.0"
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.admin.v1.CreateServiceAccount",
+      "resourceName": "projects/my-project/serviceAccounts/backdoor-sa@my-project.iam.gserviceaccount.com",
+      "status": {}
+    },
+    "resource": {
+      "type": "service_account",
+      "labels": { "project_id": "my-project" }
+    },
+    "severity": "NOTICE",
+    "timestamp": "2026-05-17T02:16:47Z"
+  },
+  {
+    "insertId": "jkl012mno",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "admin@company.com"
+      },
+      "requestMetadata": {
+        "callerIp": "203.0.113.45",
+        "callerSuppliedUserAgent": "python-requests/2.28.0"
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.admin.v1.SetIamPolicy",
+      "resourceName": "projects/my-project",
+      "request": {
+        "policy": {
+          "bindings": [
+            {
+              "role": "roles/owner",
+              "members": ["serviceAccount:backdoor-sa@my-project.iam.gserviceaccount.com"]
+            }
+          ]
+        }
+      },
+      "status": {}
+    },
+    "resource": {
+      "type": "project",
+      "labels": { "project_id": "my-project" }
+    },
+    "severity": "NOTICE",
+    "timestamp": "2026-05-17T02:17:15Z"
+  },
+  {
+    "insertId": "pqr345stu",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "developer@company.com"
+      },
+      "requestMetadata": {
+        "callerIp": "10.0.0.5",
+        "callerSuppliedUserAgent": "google-cloud-sdk/450.0.0"
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.list",
+      "resourceName": "projects/my-project/zones/us-central1-a/instances",
+      "status": {}
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": { "project_id": "my-project", "zone": "us-central1-a" }
+    },
+    "severity": "INFO",
+    "timestamp": "2026-05-17T09:05:12Z"
+  },
+  {
+    "insertId": "vwx678yza",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "unknown-user@external-domain.xyz"
+      },
+      "requestMetadata": {
+        "callerIp": "198.51.100.200",
+        "callerSuppliedUserAgent": "curl/7.88.0"
+      },
+      "serviceName": "cloudresourcemanager.googleapis.com",
+      "methodName": "GetIamPolicy",
+      "resourceName": "projects/my-project",
+      "status": {
+        "code": 7,
+        "message": "PERMISSION_DENIED"
+      }
+    },
+    "resource": {
+      "type": "project",
+      "labels": { "project_id": "my-project" }
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-05-17T02:13:55Z"
+  },
+  {
+    "insertId": "bcd901efg",
+    "logName": "projects/my-project/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "developer@company.com"
+      },
+      "requestMetadata": {
+        "callerIp": "10.0.0.5",
+        "callerSuppliedUserAgent": "google-cloud-sdk/450.0.0"
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.buckets.list",
+      "resourceName": "projects/my-project/buckets",
+      "status": {}
+    },
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": { "project_id": "my-project" }
+    },
+    "severity": "INFO",
+    "timestamp": "2026-05-17T09:06:44Z"
+  }
+]
