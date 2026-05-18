@@ -16,7 +16,7 @@ Upload a GCP audit log JSON file, and LogLens reasons over every event, identifi
 
 ## 🎬 Demo Video
 
-> [▶ Watch the 3-minute demo on YouTube](#) ← replace with your YouTube link
+> [▶ Watch the 3-minute demo on YouTube](#) 
 
 ---
 
