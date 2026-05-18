@@ -16,13 +16,13 @@ Upload a GCP audit log JSON file, and LogLens reasons over every event, identifi
 
 ## 🎬 Demo Video
 
-> [▶ Watch the 3-minute demo on YouTube](#) 
+[▶ Watch the 2-minute demo on YouTube](https://youtu.be/xrRhn7wp_5c) 
 
 ---
 
 ## 🌐 Live Hosted App
 
-> [🚀 Try LogLens Live](https://loglens-scgeakccvhijnu2vpqinyi.streamlit.app)
+[🚀 Try LogLens Live](https://loglens-scgeakccvhijnu2vpqinyi.streamlit.app/)
 
 No installation needed — paste your Gemini API key in the sidebar and click Run Demo.
 
