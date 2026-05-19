@@ -230,7 +230,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## 👤 Author
 
-**Chetan Agaitonde**
+**Chetana Gaitonde**
 - GitHub: [@chetanagaitonde](https://github.com/chetanagaitonde)
 - Built for: Google Cloud Rapid Agent Hackathon 2026 — Elastic Track
 
